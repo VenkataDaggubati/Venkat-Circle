@@ -56,7 +56,7 @@ public class TestStepsDefinition extends Base {
             driver.findElement(uimap.SearchButton).click();
             Thread.sleep(10000);
             System.out.println("Step 7: Select the Date: " + date);
-            driver.findElement(By.xpath("(//span[@aria-label='"+date+"'])[1]")).click();
+            driver.findElement(By.className("id-"+date)).click();
         }
         catch (Exception e) {
             System.out.println("Failed with exception: " + e);
