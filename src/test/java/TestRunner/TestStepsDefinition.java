@@ -54,7 +54,7 @@ public class TestStepsDefinition extends Base {
             System.out.println("Step 6: Clicking on Search Button");
             webDriverWait.until(ExpectedConditions.elementToBeClickable(uimap.SearchButton));
             driver.findElement(uimap.SearchButton).click();
-            Thread.sleep(5000);
+            Thread.sleep(10000);
             System.out.println("Step 7: Select the Date: " + date);
             driver.findElement(By.xpath("(//span[@aria-label='"+date+"'])[1]")).click();
         }
